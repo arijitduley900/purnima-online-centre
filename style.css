@@ -2,6 +2,37 @@
 :root{--primary:#4f46e5;--primary2:#7c3aed;--dark:#101828;--text:#344054;--muted:#667085;--bg:#f8faff;--white:#fff;--border:#e4e7ec}
 html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;color:var(--text);line-height:1.6;background:#fff}
 .container{width:min(1120px,92%);margin:auto}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #101828;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.logo span {
+    color: #101828;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo {
+        font-size: 0.85rem;
+    }
+}
 .nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{color:var(--dark);text-decoration:none;font-weight:900;font-size:1rem;letter-spacing:.02em}.logo span{color:var(--primary)}
 nav{display:flex;gap:28px}nav a{color:var(--text);text-decoration:none;font-weight:700}nav a:hover{color:var(--primary)}.menu-btn{display:none;border:0;background:none;font-size:1.6rem}
 .hero{padding:95px 0;background:radial-gradient(circle at 80% 20%,#e9d5ff 0,#eef2ff 28%,#fff 65%)}.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:70px;align-items:center}
