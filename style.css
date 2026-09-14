@@ -60,3 +60,60 @@ nav{display:flex;gap:28px}nav a{color:var(--text);text-decoration:none;font-weig
 footer{background:#080c16;color:#98a2b3;padding:28px 0}.footer{display:flex;justify-content:space-between;gap:20px;font-size:.88rem}.footer strong{color:#fff}
 @media(max-width:800px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:20px 4%;flex-direction:column;gap:16px;border-bottom:1px solid var(--border)}nav.open{display:flex}.menu-btn{display:block}.hero{padding:65px 0}.hero-grid,.about{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr 1fr}.footer{flex-direction:column}}
 @media(max-width:500px){.service-grid,.contact-grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}h1{font-size:2.8rem}.section{padding:65px 0}}
+/* আপনার আগের CSS এখানে থাকবে */
+
+
+/* ===== ALL-IN-ONE WEBSITE BUTTON RESPONSIVE ===== */
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.all-in-one-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  min-height: 54px;
+  border-radius: 12px;
+  background: #e88a07;
+  color: #f1f1f5;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  border: 1px solid #e1e6f5;
+  box-sizing: border-box;
+  transition: all .2s ease;
+  white-space: nowrap;
+}
+
+/* .all-in-one-btn:hover {
+  background: #f2f4ff;
+  transform: translateY(-2px);
+} */
+
+@media (max-width: 768px) {
+  .all-in-one-btn {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .contact-actions a,
+  .all-in-one-btn {
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+  }
+}
